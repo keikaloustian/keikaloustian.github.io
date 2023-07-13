@@ -7,7 +7,7 @@ baseurl: ""
 # Title of your site
 title: "Kei K. Dev"
 
-permalink: /:month:day:short_year:title
+permalink: /:short_year:month:day:title
 
 first_name: "Kei"
 last_name: "Kaloustian"
