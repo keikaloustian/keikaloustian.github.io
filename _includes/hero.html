@@ -1,0 +1,12 @@
+<section id="hero">
+  <h1>Hello!</h1>
+  <h2>
+    My name is {{ site.first_name }} {{ site.last_name }} and I'm an engineer
+    turned developer remained
+    <span>problem solver.</span>
+  </h2>
+
+  {% if page.layout == 'default' %}
+  <h2>Welcome to my portfolio.</h2>
+  {% endif %}
+</section>
