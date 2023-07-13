@@ -4,15 +4,23 @@ layout: default
 
 <header>
   <!-- Header content goes here -->
-  <h1 class="logo">Kei Kaloustian</h1>
+  <span class="logo">Kei Kaloustian</span>
   <nav class="navigation">
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="/about">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
+
+<!-- <ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul> -->
 
 {% include hero.html %}
 
