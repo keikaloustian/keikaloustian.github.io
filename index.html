@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include header.html %}
-
 <!-- <ul>
   {% for post in site.posts %}
   <li>
@@ -12,21 +10,12 @@ layout: default
   {% endfor %}
 </ul> -->
 
+{% include header.html %}
+<!--  -->
 {% include hero.html %}
-
-<section id="projects">
-  <!-- Projects section content goes here -->
-</section>
-
-<section id="testimonials">
-  <!-- Testimonials section content goes here -->
-</section>
-
-<section id="contact">
-  <!-- Contact form section content goes here -->
-</section>
-
-<footer>
-  <!-- Footer content goes here -->
-  <p>&copy; 2023 My Website. All rights reserved.</p>
-</footer>
+<!--  -->
+{% include projects.html %}
+<!--  -->
+{% include testimonials.html %}
+<!--  -->
+{% include contact.html %}
