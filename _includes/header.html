@@ -1,0 +1,33 @@
+<header class="header">
+  <div class="layout-container header__container">
+    <a href="/" class="logo">
+      <span>k</span>
+    </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        {% if page.layout == 'default' %}
+        <li>
+          <a class="nav__link nav__link--unselected" href="/">Home</a>
+        </li>
+        <li>
+          <a class="nav__link nav__link--unselected" href="/about">About Me</a>
+        </li>
+        {% endif %} {% if page.layout == 'application' %}
+        <li>
+          <a class="nav__link nav__link--unselected" href="#motivation"
+            >Motivation</a
+          >
+        </li>
+        <li>
+          <a class="nav__link nav__link--unselected" href="#projects"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a class="nav__link nav__link--unselected" href="#contact">Contact</a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</header>

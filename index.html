@@ -2,18 +2,6 @@
 layout: default
 ---
 
-<header>
-  <!-- Header content goes here -->
-  <span class="logo">Kei Kaloustian</span>
-  <nav class="navigation">
-    <ul>
-      <li><a href="/about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
 <!-- <ul>
   {% for post in site.posts %}
   <li>
@@ -22,21 +10,12 @@ layout: default
   {% endfor %}
 </ul> -->
 
+{% include header.html %}
+<!--  -->
 {% include hero.html %}
-
-<section id="projects">
-  <!-- Projects section content goes here -->
-</section>
-
-<section id="testimonials">
-  <!-- Testimonials section content goes here -->
-</section>
-
-<section id="contact">
-  <!-- Contact form section content goes here -->
-</section>
-
-<footer>
-  <!-- Footer content goes here -->
-  <p>&copy; 2023 My Website. All rights reserved.</p>
-</footer>
+<!--  -->
+{% include projects.html %}
+<!--  -->
+{% include testimonials.html %}
+<!--  -->
+{% include contact.html %}
