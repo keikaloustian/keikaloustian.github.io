@@ -13,9 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
 
   </head>
   <body>
     {{ content }}
+    {% if page.layout == 'default' %}
+    <script src="/assets/js/header.js"></script>
+    {% endif %}
   </body>
 </html>
