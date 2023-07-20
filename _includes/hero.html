@@ -1,16 +1,21 @@
 <section id="hero">
   <div class="layout-container hero-container">
-    <h1 class="hero__greeting">Hello!</h1>
-    <h2 class="hero__p1">
-      My name is Kei Kaloustian and
-      <!-- <br /> -->
-      I'm a civil engineer turned
-      <span class="hero__accent-word">web developer</span>.
-    </h2>
-    <h2 class="hero__p2">I</h2>
-    {% if page.layout == 'default' %}
-    <h2 class="hero__welcome">Welcome to my portfolio.</h2>
-    {% endif %}
+    <div class="hero__text">
+      <h1 class="hero__greeting">Hello!</h1>
+      <p class="hero__p">
+        My name is Kei Kaloustian and
+        <!-- <br /> -->
+        I'm a civil engineer turned
+        <span class="hero__accent-word">web developer</span>.
+      </p>
+      <p class="hero__p">
+        My goal is to use my problem-solving and collaboration skills in
+        combination with technology to help people live better.
+      </p>
+      {% if page.layout == 'default' %}
+      <p class="hero__p">Welcome to my portfolio.</p>
+      {% endif %}
+    </div>
 
     <img
       src="https://picsum.photos/id/794/500/600"

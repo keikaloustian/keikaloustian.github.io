@@ -1,21 +1,25 @@
 .hero-container {
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 5fr 4fr;
-  grid-template-rows: repeat(6, auto);
+  display: flex;
   font-family: $nunito;
   column-gap: 4rem;
 }
 
+.hero__text {
+  margin-top: 4rem;
+}
+
 .hero__greeting {
-  grid-row: 2;
-  grid-column: 1;
   font-size: 3.75rem;
 }
 
-.hero__p1 {
-  grid-row: 3;
-  grid-column: 1;
+.hero__p {
+  margin-block: 1em;
+  opacity: 90%;
+  font-size: 1.5rem;
+}
+
+.hero__p2 {
   margin-block: 1em;
   opacity: 90%;
 }
@@ -24,15 +28,7 @@
   // color: var(--primary);
 }
 
-.hero__welcome {
-  grid-row: 4;
-  grid-column: 1;
-  opacity: 90%;
-}
-
 .hero__image {
-  grid-row: 1 / -1;
-  grid-column: 2;
   border-radius: $corners;
 }
 
@@ -41,8 +37,7 @@
     font-size: 2rem;
   }
 
-  .hero__p1,
-  .hero__welcome {
+  .hero__p {
     font-size: 1rem;
   }
 }
@@ -52,24 +47,20 @@
     font-size: 3rem;
   }
 
-  .hero__p1,
-  .hero__welcome {
+  .hero__p {
     font-size: 1.25rem;
   }
 }
 
 @media screen and (max-width: $desktop) {
   .hero-container {
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: auto;
+    flex-direction: column;
+    // grid-template-rows: repeat(4, auto);
+    // grid-template-columns: auto;
   }
 
-  .hero__greeting,
-  .hero__p1,
-  .hero__welcome,
-  .hero__image {
-    grid-column: 1;
-    grid-row: auto;
+  .hero__text {
+    margin-top: 0;
   }
 
   .hero__image {
