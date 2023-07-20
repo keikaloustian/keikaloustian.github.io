@@ -8,6 +8,48 @@
 // $dark-primary: #a72608;
 // $dark-secondary: #001e33;
 
+// Fonts
+$arbutus: "Arbutus Slab", serif;
+$nunito: "Nunito Sans", sans-serif;
+
+// Breakpoints
+$mobile: 425px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Border radius
+$corners: 8px;
+
+// Resets
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+// Base styles
 :root {
   --bg: #f5f5f5;
   --text: #111;
@@ -29,12 +71,10 @@
   }
 }
 
-$mobile: 425px;
-$tablet: 768px;
-$desktop: 1440px;
-
 body {
   margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .layout-container {
@@ -49,12 +89,16 @@ body {
 
 @media (min-width: $tablet) {
   .layout-container {
+    max-width: 750px;
+    margin-inline: auto;
+    padding-inline: 3rem;
   }
 }
 
 @media (min-width: $desktop) {
   .layout-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-inline: auto;
+    padding-inline: 3rem;
   }
 }
