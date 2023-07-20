@@ -1,0 +1,79 @@
+.hero-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: repeat(6, auto);
+  font-family: $nunito;
+  column-gap: 4rem;
+}
+
+.hero__greeting {
+  grid-row: 2;
+  grid-column: 1;
+  font-size: 3.75rem;
+}
+
+.hero__p1 {
+  grid-row: 3;
+  grid-column: 1;
+  margin-block: 1em;
+  opacity: 90%;
+}
+
+.hero__accent-word {
+  // color: var(--primary);
+}
+
+.hero__welcome {
+  grid-row: 4;
+  grid-column: 1;
+  opacity: 90%;
+}
+
+.hero__image {
+  grid-row: 1 / -1;
+  grid-column: 2;
+  border-radius: $corners;
+}
+
+@media screen and (max-width: $mobile) {
+  .hero__greeting {
+    font-size: 2rem;
+  }
+
+  .hero__p1,
+  .hero__welcome {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  .hero__greeting {
+    font-size: 3rem;
+  }
+
+  .hero__p1,
+  .hero__welcome {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .hero-container {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+  }
+
+  .hero__greeting,
+  .hero__p1,
+  .hero__welcome,
+  .hero__image {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .hero__image {
+    margin-top: 2rem;
+    margin-inline: auto;
+  }
+}
