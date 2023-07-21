@@ -58,7 +58,7 @@ $link-bubble-right: -4px;
 .nav__link--selected {
   &:after {
     content: "";
-    background-color: var(--primary);
+    background-color: rgb(var(--primary));
     display: block;
     position: absolute;
     top: $link-bubble-top;
