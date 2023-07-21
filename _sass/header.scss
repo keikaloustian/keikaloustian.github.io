@@ -1,5 +1,5 @@
 .header {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 
 .logo {
@@ -58,7 +58,7 @@ $link-bubble-right: -4px;
 .nav__link--selected {
   &:after {
     content: "";
-    background-color: var(--primary);
+    background-color: rgb(var(--primary));
     display: block;
     position: absolute;
     top: $link-bubble-top;
