@@ -1,7 +1,7 @@
-<section id="hero">
+<section id="hero" class="hero">
   <div class="layout-container hero-container">
     <div class="hero__text">
-      <h1 class="hero__greeting">Hello!</h1>
+      <h1 class="hero__greeting">Hello,</h1>
       <p class="hero__p">
         My name is Kei Kaloustian and
         <!-- <br /> -->
@@ -17,10 +17,13 @@
       {% endif %}
     </div>
 
-    <img
-      src="https://picsum.photos/id/794/500/600"
-      alt="web developer developing"
-      class="hero__image"
-    />
+    <picture>
+      <source media="(max-width: 425px)" srcset="/assets/media/hero-S.jpg" />
+      <img
+        class="hero__image"
+        src="/assets/media/hero-L.jpg"
+        alt="portrait of me sitting in front of computer screens"
+      />
+    </picture>
   </div>
 </section>
