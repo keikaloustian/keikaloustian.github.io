@@ -1,0 +1,19 @@
+- title: YVR Snow Wax
+  image: yvrsnow.jpg
+  type: Landing Page
+  description: Web page for my ski & snowboard tune-up business. Describes the location, services, prices and allows visitors to get in contact.
+
+- title: Baum Giveaway Registration
+  image: baum.jpg
+  type: Full Stack Web App
+  description: Application built for Baum Music School's marketing campaign. Registrants fill a form and answer five EDM trivia questions to enter the contest.
+
+- title: Investment Allocation Calculator
+  image: investcalc.jpg
+  type: Front End Web App
+  description: User-friendly tool that calculates how many shares of an investment should be purchased, given a contribution amount, the desired assets and the allocation.
+
+- title: Fithub
+  image: fithub.jpg
+  type: Full Stack Web App
+  description: Fitness app for managing workouts and programs. Final group project for the Lighthouse Labs Full Stack Web Development Bootcamp.
