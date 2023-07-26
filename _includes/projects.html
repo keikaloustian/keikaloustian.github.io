@@ -37,7 +37,12 @@
     </div>
     <div class="projects__cards">
       {% for project in site.data.projects %}
-      <div class="project-card">
+      <a
+        href="{{ project.repository }}"
+        class="project-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           class="project-card__image"
           src="{{ project.image | prepend: '/assets/media/' }}"
@@ -45,7 +50,7 @@
         <p class="project-card__type">{{ project.type }}</p>
         <h2 class="project-card__title">{{ project.title }}</h2>
         <p class="project-card__description">{{ project.description }}</p>
-      </div>
+      </a>
       {% endfor %}
     </div>
   </div>
