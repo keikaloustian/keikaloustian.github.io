@@ -86,6 +86,20 @@ $arrow-animation-timingfunction: ease-out;
   .projects__cards {
     grid-template-columns: 1fr;
   }
+
+  .projects__p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .projects__p {
+    font-size: 1rem;
+  }
+
+  .projects__heading {
+    font-size: 2rem;
+  }
 }
 
 .projects__cards {
