@@ -36,15 +36,22 @@
       </a>
     </div>
     <div class="projects__cards">
-      <div class="project-card">
-        <img class="project-card__image" src="/assets/media/baum.jpg" />
-        <p class="project-card__type">Full Stack Web App</p>
-        <h2 class="project-card__title">Baum Festival Registration</h2>
-        <p class="project-card__description">
-          Next.js application that collects registrant data and records their
-          answers to trivia quiz for a giveaway campaign
-        </p>
-      </div>
+      {% for project in site.data.projects %}
+      <a
+        href="{{ project.repository }}"
+        class="project-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="project-card__image"
+          src="{{ project.image | prepend: '/assets/media/' }}"
+        />
+        <p class="project-card__type">{{ project.type }}</p>
+        <h2 class="project-card__title">{{ project.title }}</h2>
+        <p class="project-card__description">{{ project.description }}</p>
+      </a>
+      {% endfor %}
     </div>
   </div>
 </section>
