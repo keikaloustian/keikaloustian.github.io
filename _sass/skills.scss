@@ -1,0 +1,22 @@
+.skills {
+  font-family: $nunito;
+  margin-top: 10rem;
+}
+
+.skills-container {
+}
+
+.skills__heading {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: $mobile) {
+  .skills__heading {
+    font-size: 2rem;
+  }
+}
+
+.skill-emblems {
+  list-style: none;
+  padding: 0;
+}
