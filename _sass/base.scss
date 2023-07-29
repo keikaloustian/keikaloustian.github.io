@@ -32,6 +32,14 @@ p {
   margin-bottom: 0;
 }
 
+button {
+  border: none;
+}
+
+input, textarea {
+  box-sizing: border-box;
+}
+
 img,
 svg,
 video,
