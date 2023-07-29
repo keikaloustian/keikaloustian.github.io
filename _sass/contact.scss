@@ -67,7 +67,7 @@
   opacity: 0.8;
 }
 
-.form__button-send {
+.form__submit {
   width: 200px;
   font-size: 1rem;
   padding: 1rem;
@@ -78,18 +78,26 @@
   transition: background-color 0.1s ease-in-out;
 }
 
+.form__submit--disabled {
+  background-color: var(--accent);
+}
+
 @media screen and (max-width: $mobile) {
-  .form__button-send {
+  .form__submit {
     width: 100px;
   }
 }
 
-.form__button-send:hover {
+.form__submit:hover {
   background-color: rgb(var(--primary));
 }
 
 .form__result {
+  margin-top: 1rem;
   font-size: 1rem;
-  color: #9ca3af;
-  text-align: center;
+  color: var(--text);
+}
+
+.form__result--hidden {
+  visibility: hidden;
 }
