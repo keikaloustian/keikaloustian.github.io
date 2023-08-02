@@ -1,0 +1,41 @@
+- title: HTML
+  icon: html-5.svg
+
+- title: CSS
+  icon: css-3.svg
+
+- title: JavaScript
+  icon: javascript.svg
+
+- title: TypeScript
+  icon: typescript-icon.svg
+
+- title: React
+  icon: react.svg
+
+- title: Next.js
+  icon: nextjs-icon.svg
+
+- title: Tailwind CSS
+  icon: tailwindcss-icon.svg
+
+- title: SASS
+  icon: sass.svg
+
+- title: Node.js
+  icon: nodejs-icon.svg
+
+- title: Express
+  icon: express.svg
+
+- title: PostgreSQL
+  icon: postgresql.svg
+
+- title: MySQL
+  icon: mysql.svg
+
+- title: Ruby
+  icon: ruby.svg
+
+- title: Rails
+  icon: rails.svg
