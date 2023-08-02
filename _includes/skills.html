@@ -1,8 +1,50 @@
 <section id="skills" class="skills">
   <div class="layout-container skills-container">
     <h1 class="skills__heading">Skills</h1>
-    <ul class="skill-emblems">
-      <li class="skill-emblem"></li>
+
+    <p class="skills__p">These are some of the technologies I've used.</p>
+
+    <a
+      class="skills__link"
+      href="https://github.com/keikaloustian#my-skill-set"
+      target="_blank"
+      rel="noopener noreferrer"
+      >See my complete stack
+
+      <!-- ARROW RIGHT ICON -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 -960 960 960"
+        class="skills-link__icon skills-link__icon--arrow"
+      >
+        <path
+          d="m560-242-43-42 168-168H160v-60h525L516-681l43-42 241 241-240 240Z"
+          fill="currentColor"
+        />
+      </svg>
+      <!-- CHEVRON RIGHT ICON -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 -960 960 960"
+        class="skills-link__icon skills-link__icon--chevron"
+      >
+        <path
+          d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"
+          fill="currentColor"
+        />
+      </svg>
+    </a>
+
+    <ul class="skills__list">
+      {% for technology in site.data.technologies %}
+      <li class="skill">
+        <img
+          src="{{ technology.icon | prepend: '/assets/media/technologies/' }}"
+          alt="{{ technology.title }}"
+          class="skill__icon"
+        />
+      </li>
+      {% endfor %}
     </ul>
   </div>
 </section>
