@@ -1,5 +1,8 @@
-<footer class="footer">
-  <span class="footer__logo">kei k.</span>
+<footer id="footer" class="footer">
+  <span class="footer__logo"
+    >{% if page.layout == 'application' %} contact me {% else %} kei k. dev{%
+    endif %}
+  </span>
 
   <div class="footer__socials">
     <a

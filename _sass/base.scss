@@ -36,7 +36,8 @@ button {
   border: none;
 }
 
-input, textarea {
+input,
+textarea {
   box-sizing: border-box;
 }
 
@@ -68,6 +69,7 @@ video {
 
   background-color: var(--bg);
   color: var(--text);
+  scroll-behavior: smooth;
 }
 
 @media screen and (prefers-color-scheme: dark) {

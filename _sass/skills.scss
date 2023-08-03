@@ -57,6 +57,7 @@
   display: inline-block;
   opacity: 70%;
   margin-left: -3px;
+  margin-bottom: 3px;
 
   &--arrow {
     color: inherit;
@@ -94,7 +95,7 @@
   height: 50px;
   filter: saturate(45%);
   transition: all;
-  transition-duration: 0.1s;
+  transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
 
   &:hover {
