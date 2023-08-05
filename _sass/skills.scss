@@ -86,9 +86,12 @@
 }
 
 .skill {
-  background-color: rgb(var(--secondary), 0.1);
-  padding: 10px 15px;
-  border-radius: 999px;
+  background: radial-gradient(
+    closest-side,
+    rgb(var(--secondary), 0.15),
+    transparent
+  );
+  padding: 20px 25px;
 }
 
 .skill__icon {
