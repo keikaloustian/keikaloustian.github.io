@@ -8,12 +8,23 @@
         I'm a civil engineer turned
         <span class="hero__accent-word">web developer</span>.
       </p>
+
+      <!-- PORTFOLIO TEXT -->
+      {% if page.layout == 'default' %}
       <p class="hero__p">
         My goal is to use technology in combination with my problem-solving and
         collaboration skills to help people live better.
       </p>
-      {% if page.layout == 'default' %}
       <p class="hero__p">Welcome to my portfolio.</p>
+      {% endif %}
+
+      <!-- APPLICATION TEXT -->
+      {% if page.layout == 'application' %}
+      <p class="hero__p">
+        In an attempt to set myself apart in this competitive job market, I
+        prepared a different kind of "application".
+      </p>
+      <p class="hero__p">Welcome to my virtual cover letter.</p>
       {% endif %}
     </div>
 
