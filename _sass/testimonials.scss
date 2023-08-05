@@ -58,12 +58,12 @@
 
 .testimonial__title {
   opacity: 80%;
-  font-weight: 300;
+  font-weight: var(--lighttext);
 }
 
 .testimonial__text {
   opacity: 90%;
-  font-weight: 300;
+  font-weight: var(--lighttext);
   margin-top: 1.5rem;
   grid-column: 1 / span 2;
 }

@@ -66,6 +66,7 @@ video {
   --primary: 168, 28, 7;
   --secondary: 0, 49, 83;
   --accent: #708090;
+  --lighttext: 400;
 
   background-color: var(--bg);
   color: var(--text);
@@ -79,6 +80,7 @@ video {
     --primary: 167, 38, 8;
     --secondary: 204, 234, 255;
     --accent: #bebfc5;
+    --lighttext: 300;
   }
 }
 
