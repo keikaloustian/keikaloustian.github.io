@@ -63,7 +63,21 @@
 
 .testimonial__text {
   opacity: 90%;
+  position: relative;
   font-weight: var(--lighttext);
   margin-top: 1.5rem;
   grid-column: 1 / span 2;
+
+  &::before {
+    content: "“";
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    display: block;
+    z-index: 2;
+    font-size: 180px;
+    line-height: 1;
+    opacity: 0.08;
+    user-select: none;
+  }
 }
