@@ -1,3 +1,20 @@
-<section id="testimonials">
-  <!-- Testimonials section content goes here -->
+<section id="testimonials" class="testimonials">
+  <div class="layout-container">
+    <h1 class="testimonials__heading">Testimonials</h1>
+    <div class="testimonials-container">
+      {% for testimonial in site.data.testimonials %}
+      <div class="testimonial__card">
+        <img
+          src="{{ testimonial.image }}"
+          alt="{{ testimonial.name }}"
+          class="testimonial__picture"
+        />
+        <h2 class="testimonial__name">{{ testimonial.name }}</h2>
+        <p class="testimonial__title">{{ testimonial.title }}</p>
+
+        <p class="testimonial__text">{{ testimonial.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>

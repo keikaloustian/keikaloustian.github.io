@@ -24,6 +24,7 @@
 .projects__p {
   opacity: 90%;
   font-size: 1.5rem;
+  font-weight: var(--lighttext);
   margin-top: 0.75rem;
   margin-bottom: 1.25rem;
 }
@@ -131,8 +132,9 @@ $arrow-animation-timingfunction: ease-out;
 }
 
 .project-card__description {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   font-size: 1.125rem;
+  font-weight: var(--lighttext);
   opacity: 90%;
   display: -webkit-box;
   -webkit-line-clamp: 2;
