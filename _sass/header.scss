@@ -77,6 +77,7 @@ $link-bubble-right: -4px;
 .hamburger__button {
   display: none;
   margin-left: 2rem;
+  background-color: transparent;
 }
 
 @media screen and (max-width: $mobile) {
@@ -94,8 +95,8 @@ $link-bubble-right: -4px;
     row-gap: 1rem;
     align-items: end;
     width: max-content;
-    right: 0.25rem;
-    top: 2rem;
+    right: 1rem;
+    top: 3.5rem;
     border-left: 2px solid rgb(var(--primary));
     border-right: 2px solid rgb(var(--primary));
     border-radius: $corners;
@@ -115,4 +116,59 @@ $link-bubble-right: -4px;
 .nav__list--visible {
   visibility: visible;
   opacity: 1;
+}
+
+.hamburger__icon .top {
+  stroke-dasharray: 40 160;
+}
+
+.hamburger__icon .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+
+.hamburger__icon .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition:
+    transform 400ms,
+    stroke-dashoffset 400ms;
+}
+
+.hamburger__icon.active .top {
+  stroke-dashoffset: -64px;
+}
+
+.hamburger__icon.active .middle {
+  //stroke-dashoffset: -20px;
+  transform: rotate(90deg);
+}
+
+.hamburger__icon.active .bottom {
+  stroke-dashoffset: -64px;
+}
+
+.hamburger__icon {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill: none;
+  transition:
+    stroke-dasharray 400ms,
+    stroke-dashoffset 400ms;
+  stroke: var(--text);
+  stroke-width: 5.5;
+  stroke-linecap: round;
 }
