@@ -115,3 +115,45 @@ body {
     padding-inline: 3rem;
   }
 }
+
+.scrolltop {
+  color: var(--bg);
+  position: fixed;
+  background-color: rgb(var(--secondary), 0.9);
+  padding: 0;
+  border-radius: $corners;
+  bottom: 25px;
+  right: 15px;
+  height: 35px;
+  width: 35px;
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+  translate: 100px;
+
+  &:hover {
+    background-color: rgb(var(--secondary), 1);
+  }
+}
+
+.scrolltop--visible {
+  translate: 0;
+}
+
+.scrolltop__icon {
+  width: 25px;
+  height: 25px;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: $mobile) {
+  .scrolltop {
+    height: 30px;
+    width: 30px;
+  }
+  .scrolltop__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
