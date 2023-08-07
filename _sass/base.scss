@@ -119,7 +119,7 @@ body {
 .scrolltop {
   color: var(--bg);
   position: fixed;
-  background-color: rgb(var(--secondary), 0.9);
+  background-color: rgb(var(--secondary));
   padding: 0;
   border-radius: $corners;
   bottom: 25px;
@@ -133,7 +133,7 @@ body {
   translate: 100px;
 
   &:hover {
-    background-color: rgb(var(--secondary), 1);
+    background-color: rgb(var(--primary));
   }
 }
 
