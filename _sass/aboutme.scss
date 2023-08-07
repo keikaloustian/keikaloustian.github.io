@@ -1,0 +1,17 @@
+.aboutme {
+  margin-top: 3rem;
+}
+
+.aboutme-container {
+  font-family: $nunito;
+}
+
+.aboutme__heading {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: $mobile) {
+  .aboutme__heading {
+    font-size: 2rem;
+  }
+}
