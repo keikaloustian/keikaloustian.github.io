@@ -20,9 +20,13 @@
   </head>
   <body>
     {{ content }}
+    <button class="scrolltop">
+      <svg xmlns="http://www.w3.org/2000/svg" class="scrolltop__icon" viewBox="0 -960 960 960" ><path fill="currentColor" d="m282-225-42-42 240-240 240 240-42 42-198-198-198 198Zm0-253-42-42 240-240 240 240-42 42-198-198-198 198Z"/></svg>
+    </button>
     {% if page.layout == 'default' %}
     <script src="/assets/js/header.js"></script>
     <script src="/assets/js/contactForm.js"></script>
     {% endif %}
+    <script src="/assets/js/scrollTop.js"></script>
   </body>
 </html>
