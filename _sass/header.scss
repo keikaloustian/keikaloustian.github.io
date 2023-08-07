@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.nav {
+  display: flex;
+  position: relative;
+}
+
 .nav__list {
   list-style: none;
   padding: 0;
@@ -67,4 +72,103 @@ $link-bubble-right: -4px;
     width: $link-bubble-diameter;
     border-radius: 50%;
   }
+}
+
+.hamburger__button {
+  display: none;
+  margin-left: 2rem;
+  background-color: transparent;
+}
+
+@media screen and (max-width: $mobile) {
+  .hamburger__button {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .nav__list {
+    position: absolute;
+    z-index: 10;
+    background-color: var(--bg-light);
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: end;
+    width: max-content;
+    right: 1rem;
+    top: 3.5rem;
+    border-left: 2px solid rgb(var(--primary));
+    border-right: 2px solid rgb(var(--primary));
+    border-radius: $corners;
+    padding: 1rem 1rem 1rem 2.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity;
+    transition-duration: 0.2s;
+  }
+
+  .nav__link {
+    margin-left: 0;
+  }
+}
+
+.nav__list--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hamburger__icon .top {
+  stroke-dasharray: 40 160;
+}
+
+.hamburger__icon .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+
+.hamburger__icon .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition:
+    transform 400ms,
+    stroke-dashoffset 400ms;
+}
+
+.hamburger__icon.active .top {
+  stroke-dashoffset: -64px;
+}
+
+.hamburger__icon.active .middle {
+  //stroke-dashoffset: -20px;
+  transform: rotate(90deg);
+}
+
+.hamburger__icon.active .bottom {
+  stroke-dashoffset: -64px;
+}
+
+.hamburger__icon {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill: none;
+  transition:
+    stroke-dasharray 400ms,
+    stroke-dashoffset 400ms;
+  stroke: var(--text);
+  stroke-width: 5.5;
+  stroke-linecap: round;
 }
