@@ -80,13 +80,13 @@ $link-bubble-right: -4px;
   background-color: transparent;
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
   .hamburger__button {
     display: inline;
   }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
   .nav__list {
     position: absolute;
     z-index: 10;
