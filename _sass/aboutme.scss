@@ -11,10 +11,11 @@
 
 .aboutme__image {
   width: 40%;
+  height: auto;
   border-radius: 50%;
   outline: solid 3px rgb(var(--primary));
   outline-offset: 3px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1;
   align-self: flex-start;
 }
 
