@@ -1,6 +1,6 @@
 # Portfolio+
 
-V1 of my web development portfolio. In it's core, it's a simple static site making use of the Liquid templating language.
+V1 of my web development portfolio. In it's core, it's a simple static site making use of the Liquid templating language.  
 In addition, makes use of Jekyll's blogging features to produce tailored "virtual cover letters" for potential employers.
 
 ## Deployment
