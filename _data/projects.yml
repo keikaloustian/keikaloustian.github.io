@@ -2,22 +2,22 @@
   image: yvrsnow.jpg
   type: Landing Page
   description: Web page for my ski & snowboard tune-up business. Describes the location, services, prices and allows visitors to get in contact.
-  repository: https://github.com/keikaloustian/yvrwax-astro
+  link: https://yvrwax.vercel.app/
 
 - title: Baum Giveaway Registration
   image: baum.jpg
   type: Full Stack Web App
   description: Application built for Baum Music School's marketing campaign. Registrants fill a form and answer five EDM trivia questions to enter the contest.
-  repository: https://github.com/keikaloustian/baum-registration
+  link: https://baumregistration.vercel.app/
 
 - title: Investment Allocation Calculator
   image: investcalc.jpg
   type: Front End Web App
   description: User-friendly tool that calculates how many shares of an investment should be purchased given a contribution amount, the desired assets and the allocation.
-  repository: https://github.com/keikaloustian/investment-calculator
+  link: https://investallocator.netlify.app/
 
 - title: Fithub
   image: fithub.jpg
   type: Full Stack Web App
   description: Fitness app for managing workouts and programs. Final group project for the Lighthouse Labs Full Stack Web Development Bootcamp.
-  repository: https://github.com/minha0817/workout_tracker
+  link: https://github.com/minha0817/workout_tracker
