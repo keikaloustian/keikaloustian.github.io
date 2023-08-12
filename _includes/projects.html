@@ -10,7 +10,7 @@
         href="https://github.com/keikaloustian?tab=repositories"
         target="_blank"
         rel="noopener noreferrer"
-        >See all projects
+        >See all projects on GitHub
         <!-- ARROW RIGHT ICON -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@
     <div class="projects__cards">
       {% for project in site.data.projects %}
       <a
-        href="{{ project.repository }}"
+        href="{{ project.link }}"
         class="project-card"
         target="_blank"
         rel="noopener noreferrer"
