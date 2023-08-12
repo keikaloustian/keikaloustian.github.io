@@ -1,7 +1,8 @@
 # Portfolio+
 
 V1 of my web development portfolio. In it's core, it's a simple static site utilizing the Liquid templating language.  
-In addition, makes use of Jekyll's blogging features to produce tailored "virtual cover letters" for potential employers.
+In addition, makes use of Jekyll's blogging features to produce tailored "virtual cover letters" for potential employers.  
+Design inspired by the [Akio](https://jekyllthemes.io/theme/akio-portfolio-jekyll-theme) and [Vonge](https://cloudcannon.com/templates/vonge/) Jekyll themes.
 
 ## Deployment
 
