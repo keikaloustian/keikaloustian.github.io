@@ -19,4 +19,4 @@ https://keikaloustian.github.io/
 - [ ] Scroll animations w/ Intersection Observer API
 
 ## Finished Product
-![]()
+![](https://github.com/keikaloustian/keikaloustian.github.io/blob/main/docs/demo.gif?raw=true)
