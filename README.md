@@ -8,15 +8,19 @@ Design inspired by the [Akio](https://jekyllthemes.io/theme/akio-portfolio-jekyl
 
 https://keikaloustian.github.io/
 
+## To Do List
+- [ ] Add a link to virtual resume
+
+## Potential Improvements
+- [ ] Scroll animations w/ Intersection Observer API
+- [ ] Logo hover decoration
+
 ## Tech Stack
 
 - Jekyll
 - Liquid
 - SASS
 - GitHub Pages
-
-## Potential Improvements
-- [ ] Scroll animations w/ Intersection Observer API
 
 ## Finished Product
 ![](https://github.com/keikaloustian/keikaloustian.github.io/blob/main/docs/demo.gif?raw=true)
